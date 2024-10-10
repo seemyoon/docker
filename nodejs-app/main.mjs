@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-fs.appendFile('my-file.txt', 'some txt', (err) => {
+fs.appendFile('my-file.txt', 'File was created by Node.js', (err) => {
     if (err) throw err
     console.log('File store!')
 })

@@ -2,7 +2,9 @@ FROM python:alpine
 
 LABEL authors="semyon"
 
-WORKDIR /app
+WORKDIR ./app
+
+RUN pip install pymongo
 
 COPY . .
 
